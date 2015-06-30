@@ -29,3 +29,12 @@ $ ipmitool user set password 3 ADMIN
 $ ipmitool user enable 3
 $ ipmitool user priv 3 4 1
 ```
+
+```bash
+$ ipmitool lan print 2
+$ ipmitool lan set 2 ipsrc dhcp
+$ ipmitool lan set 2 ipsrc static
+$ ipmitool lan set 2 ipaddr <ip>
+$ ipmitool lan set netmask <netmask>
+$ ipmitool lan set 2 defgw ipaddr <defgw>
+```
