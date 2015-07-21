@@ -127,3 +127,9 @@ $ MegaCli -LDGetProp -Cache -Lall -aALL -NoLog
 $ storcli /c0/dall show
 $ storcli /c0 show
 ```
+
+```bash
+# clear log
+$ MegaCli -AdpEventLog -Clear -aALL
+$ MegaCli -FwTermLog -Clear -aALL
+```
