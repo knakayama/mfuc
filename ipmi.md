@@ -4,11 +4,12 @@ IPMI
 ```bash
 # BMC cold reset
 $ IPMICFG -r
-```
-
-```bash
 # show ipmi info (voltage etc..)
 $ IPMICFG -pminfo
+# Power supply FRU health
+$ IPMICFG -psfruinfo
+# Battery backup power status
+$ IPMICFG -psbbpinfo
 ```
 
 ```bash
