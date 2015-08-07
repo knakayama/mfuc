@@ -38,3 +38,20 @@ $ ipmitool lan set 2 ipaddr <ip>
 $ ipmitool lan set netmask <netmask>
 $ ipmitool lan set 2 defgw ipaddr <defgw>
 ```
+
+```bash
+# show SEL log
+$ ipmitool sel list
+# clear SEL log
+$ ipmitool sel clear
+# show real time log
+$ ipmitool sdr
+# Displays information regarding the high-level status of the system chassis and main power subsystem.
+$ ipmitool chassis status
+# Show current chassis power status
+$ ipmitool chassis power status
+# show BMC info
+$ ipmitool bmc info
+# show channel info
+$ ipmitool channel info
+```
