@@ -47,4 +47,7 @@ $ git checkout --theirs <file>
 # search file name in previous commit
 $ git log -S <string>
 $ git log --pretty=oneline --name-only -S <string>
+
+# http://blog.shibayu36.org/entry/2015/08/19/095641
+$ git log @{u}..HEAD --format="- %H %s"
 ```
