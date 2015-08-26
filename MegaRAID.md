@@ -108,6 +108,8 @@ $ MegaCli -PDList -aALL -NoLog |awk '/Device Id/ { print $NF }' | xargs -I% smar
 ```bash
 # Set WriteBack
 $ MegaCli -LDSetProp WB -LALL -aALL -NoLog
+# Set WriteThrough
+$ MegaCli -LDSetProp WT -LALL -aALL -NoLog
 $ MegaCli -LDSetProp -CacheBadBBU -Immediate -Lall -aALL -NoLog
 $ MegaCli -LDSetProp -RA -Immediate -Lall -aALL
 ```
