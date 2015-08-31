@@ -31,3 +31,17 @@ $ caffeinate -u vivek wget url
 $ caffeinate -t 60
 $ caffeinate -t 120 wget url
 ```
+
+```bash
+# http://www.cyberciti.biz/faq/howto-restart-airport-wireless-from-bash-command-line-in-macosx/
+$ sudo ifconfig en0 stop
+$ sudo ifconfig en0 start
+$ sudo ifconfig -u en0
+# Restart Mac OS X networking
+# off
+$ networksetup -setairportpower en0 off
+$ networksetup -setairportpower 'Wi-Fi' off
+# on
+$ networksetup -setairportpower en0 on
+$ networksetup -setairportpower 'Wi-Fi' on
+```
