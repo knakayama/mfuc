@@ -50,4 +50,8 @@ $ git log --pretty=oneline --name-only -S <string>
 
 # http://blog.shibayu36.org/entry/2015/08/19/095641
 $ git log @{u}..HEAD --format="- %H %s"
+
+# http://qiita.com/kishi_yama/items/20c708a034890c519799
+$ git checkout stash@{0} -- <filename>
+$ git show stash@{0}:<full/filename>  >  <newfile>
 ```
