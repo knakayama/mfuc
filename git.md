@@ -54,4 +54,12 @@ $ git log @{u}..HEAD --format="- %H %s"
 # http://qiita.com/kishi_yama/items/20c708a034890c519799
 $ git checkout stash@{0} -- <filename>
 $ git show stash@{0}:<full/filename>  >  <newfile>
+
+# http://motemen.hatenablog.com/entry/2015/10/git-commit-fixup
+$ git commit --fixup=HEAD~1
+$ git commit --fixup ':/some commit'
+$ git rebase -i --autosquash HEAD~3
+
+# http://qiita.com/bibio/items/94983de865e3aaf8be9c
+$ git commit --amend --reset-author
 ```
