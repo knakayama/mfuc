@@ -57,4 +57,18 @@ $ git show stash@{0}:<full/filename>  >  <newfile>
 
 # http://qiita.com/ramuneya/items/5f94c37cc6441a9a7f34
 $ git log -S" $" --pickaxe-regex --name-only --pretty="__NEWLINE__%h%x09%an%x09%ae%x09%s" | tr "\n" "\t" | sed 's/__NEWLINE__/\n/g'
+
+# http://motemen.hatenablog.com/entry/2015/10/git-commit-fixup
+$ git commit --fixup=HEAD~1
+$ git commit --fixup ':/some commit'
+$ git rebase -i --autosquash HEAD~3
+
+# http://qiita.com/bibio/items/94983de865e3aaf8be9c
+$ git commit --amend --reset-author
+
+# http://qiita.com/usamik26/items/56d0d3ba7a1300625f92
+$ git update-index --assume-unchanged <file>
+$ git update-index --no-assume-unchanged <file>
+$ git update-index --skip-worktree <file>
+$ git update-index --no-skip-worktree <file>
 ```
