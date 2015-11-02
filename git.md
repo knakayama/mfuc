@@ -54,4 +54,7 @@ $ git log @{u}..HEAD --format="- %H %s"
 # http://qiita.com/kishi_yama/items/20c708a034890c519799
 $ git checkout stash@{0} -- <filename>
 $ git show stash@{0}:<full/filename>  >  <newfile>
+
+# http://qiita.com/ramuneya/items/5f94c37cc6441a9a7f34
+$ git log -S" $" --pickaxe-regex --name-only --pretty="__NEWLINE__%h%x09%an%x09%ae%x09%s" | tr "\n" "\t" | sed 's/__NEWLINE__/\n/g'
 ```
