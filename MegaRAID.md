@@ -62,6 +62,8 @@ $ MegaCli -AdpEventLog -GetEvents -f getevent.txt -a0 -NoLog
 ```bash
 # Enable Consistency Check
 $ MegaCli -AdpCcSched -ModeConc -SetStartTime 20141025 03 -aALL
+# Display Consistency Check time
+$ MegaCli -AdpCcSched -Info -aALL -NoLog
 ```
 
 ```bash
