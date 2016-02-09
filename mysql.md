@@ -9,3 +9,9 @@ $ ls -lS /home/mysql/<database> | awk '$5>=100000000 {print $NF}' | xargs -I% ls
 # slow query log
 $ mysqldumpslow -s t -r <log>
 ```
+
+```bash
+# http://qiita.com/akichim21/items/f1b3497e97c8f7a580ba
+$ mysqldump -h host -P 3306 -u user -p database_name | gzip | aws s3 cp - s3://temp/xxx.sql.gz
+$ aws s3 cp s3://temp/xxx.sql.gz - | gunzip | mysql -h host -P 3306 -p test -u user
+```
