@@ -95,3 +95,8 @@ $ ip n del 192.168.0.1 dev eth0
 # y: look, n: skip, q: stop
 man -K h_name
 ```
+
+```bash
+# what is my ip
+$ curl ifconfig.co
+```
