@@ -93,7 +93,7 @@ $ ip n del 192.168.0.1 dev eth0
 ```bash
 # search keyword
 # y: look, n: skip, q: stop
-man -K h_name
+$ man -K h_name
 ```
 
 ```bash
